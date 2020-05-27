@@ -27,6 +27,9 @@ def DoG(s, o):
 	# plt.title('New_Img_Y'), plt.xticks([]), plt.yticks([])
 
 	# plt.show()
+
+	
+	
 	gauss = np.zeros([11,11,32])
 	# print(gauss.shape)
 
@@ -93,16 +96,16 @@ def testMain():
 	# s = input("Enter scale factor: ") 
 	# o = input("no. of orientations: ")
 	# sys.exit(0)
-	d =DoG(2, 16)
-	# print('d= ',d)
-	fig = plt.figure(figsize=(16,2))
-	fig.tight_layout()
-	for i in range(0,32):
-		sub = fig.add_subplot(2,16,i+1)
-		sub.imshow(d[:,:,i], cmap = "gray", interpolation="nearest")
-		plt.axis('off')
-	plt.show()
-	plt.savefig('DoG_5_5.png')
+	# d =DoG(2, 16)
+	# # print('d= ',d)
+	# fig = plt.figure(figsize=(16,2))
+	# fig.tight_layout()
+	# for i in range(0,32):
+	# 	sub = fig.add_subplot(2,16,i+1)
+	# 	sub.imshow(d[:,:,i], cmap = "gray", interpolation="nearest")
+	# 	plt.axis('off')
+	# plt.show()
+	# plt.savefig('DoG_5_5.png')
 
 if __name__ == '__main__':
 	# # for i in range(1,3):
